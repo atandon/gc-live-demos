@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+{{ name | lowercase }}
+
+  <ul>
+    <li *ngFor="let c of contacts">
+
+        <div [class.jamesClass]="c.name === 'James'">
+        {{ c.name }}
+        </div>
+        <a routerLink="/test">Test</a>
+        <div *ngIf="c.phoneNum">
+        {{ c.phoneNum }}
+        </div>
+    </li>
+  </ul>
+<router-outlet></router-outlet>
