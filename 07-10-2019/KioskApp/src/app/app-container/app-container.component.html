@@ -1,0 +1,5 @@
+<h2>Kiosk App!</h2>
+<input type="text" [(ngModel)]="itemToBeAdded" />
+<button (click)="addToCart()">Add</button>
+
+<app-items-list [cart]="cart"></app-items-list>

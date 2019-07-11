@@ -1,0 +1,17 @@
+Create a checkout kiosk app
+
+- Required:
+Should use Input(), Pipes,
+and ngModel
+
+- 3 components:
+   - 1 parent component
+   - 1 items component
+   - 1 item component
+
+- Functionality:
+- Input box where a user adds an item
+- Adds the item to a list
+- Item component:
+item name
+date the item was added
