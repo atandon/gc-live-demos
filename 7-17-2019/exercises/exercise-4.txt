@@ -1,0 +1,4 @@
+Exercise #4
+
+Declare a function that deletes a movie from the movie array. The function
+should have 1 parameter, the movie id. The function should not return anything.

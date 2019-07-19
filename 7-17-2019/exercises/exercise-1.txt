@@ -1,0 +1,12 @@
+Exercise #1
+
+Declare an interface for a movie object with 6 different properties:
+
+- id
+- Movie title
+- Movie year
+- Movie budget
+- Movie cast
+- Movie box office earnings
+
+Create a movie object and set the type of the variable to the interface you created

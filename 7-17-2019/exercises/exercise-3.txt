@@ -1,0 +1,10 @@
+Exercise #3
+
+- Declare a function that searches the movie array defined in 
+Exercise #2
+The function should have 1 parameter, a search query with the 
+type being the interface defined in Exercise #2.
+
+Implement this function by using the search query to filter the search 
+database and return an array of movie objects. Remember to use every
+property defined in the search query to return the correct search results.

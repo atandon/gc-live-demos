@@ -1,0 +1,13 @@
+Exercise #2
+
+- Declare a function that adds a movie to the movie database 
+(an array of movie objects).
+You should have one parameter in the function, the movie 
+object to be added to the list.
+
+- Declare an interface for a movie search query with properties:
+    - limit (the limited number of movies you want returned in your 
+    search query)
+    - movie title
+    - exclude (the array of movie ids you want excluded from your 
+    search result)

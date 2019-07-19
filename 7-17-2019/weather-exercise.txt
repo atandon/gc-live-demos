@@ -1,0 +1,19 @@
+Create an Angular Weather app
+
+You have 2 inputs:
+    - a longtitude
+    - a latitude
+and 1 submit button
+
+When a user enters the grid #1 and grid #2 and 
+clicks the submit button, 
+they should see a print out of the
+    - current temperature
+    - bonus: add any other properties given to you 
+    by the api
+
+API to make requests
+https://api.weather.gov/gridpoints/TOP/[grid1],[grid2]/forecast
+
+Example:
+https://api.weather.gov/gridpoints/TOP/31,80/forecast
