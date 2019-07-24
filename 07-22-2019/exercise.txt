@@ -1,0 +1,15 @@
+You want to showcase all the projects you have worked on since
+the start of bootcamp, so you decide to build a portfolio website
+using Angular.
+
+The Angular app consists of:
+
+    - 3 pages (a.k.a components)
+        - Home page
+        - About page
+        - Projects page
+    - 1 main navigation that always is visible and links to 
+    each of the pages above
+
+    Bonus: Add a "404 Not Found" page if a user attempts to 
+    navigate to a page that does not exist.
