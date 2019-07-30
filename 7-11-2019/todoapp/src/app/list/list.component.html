@@ -1,0 +1,14 @@
+
+<input type="text" [(ngModel)]="itemToAdd" />
+<input type="text" [(ngModel)]="itemToAdd" />
+{{ itemToAdd }}
+<ul>
+    <li *ngFor="let i of items">
+        {{ i }}
+        <span *ngIf="i === itemToAdd">
+            this is a {{ itemToAdd }}
+        </span>
+    </li>
+</ul>
+
+<button (click)="trigger($event)">trigger</button>
