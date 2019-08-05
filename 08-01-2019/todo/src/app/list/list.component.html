@@ -1,0 +1,12 @@
+
+<ul>
+    <ng-container *ngFor="let n of nums">
+        <li *ngIf="n > 5">
+            {{ n }}
+        </li>
+    </ng-container>
+</ul>
+
+<input (keyup)="isMatch()" type="number" [(ngModel)]="inputVal" />
+{{ inputVal }}
+<button (click)="changeNumbers($event)">Change my numbers</button>
