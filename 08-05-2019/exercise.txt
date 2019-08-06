@@ -1,0 +1,34 @@
+
+
+Setup
+
+- Create two folder:
+    - one for your client (angular app)
+    - one for your server
+
+- In your client folder, create a new angular app with one component called Profile
+
+- In your server folder, create one file named server.js. 
+
+
+Creating your server
+
+In your server.js file, create a node server using the 'http' library. When a GET request is made to 
+localhost:8100, return an object that contains keys firstName, lastName, and age.
+ie. {
+    firstName: "Ricky",
+    lastName: "Bobby",
+    age: 101
+}
+
+Remember to add the 'application/json' Content-Type to your header. Also add the following line of code:
+res.setHeader('Access-Control-Allow-Origin', '*');
+
+Creating your client
+
+Add the HttpClientModule to your Angular app so you can start making http requests in your angular components.
+Make a request in your profile component to your server (remember it's localhost:8100). Print out the entire 
+user object in your profile template.
+
+
+
