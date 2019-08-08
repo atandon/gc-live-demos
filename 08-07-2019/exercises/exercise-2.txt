@@ -1,0 +1,13 @@
+Create 3 files:
+- 1 file to run your express server
+- 2 files to define your router
+
+In your first router file, add 3 endpoints:
+- GET /user/:id
+- PUT /user/:id
+- POST /user
+
+In your second router file, add 4 endpoints:
+- GET /group/:id
+- POST /group
+- DELETE /group/:id

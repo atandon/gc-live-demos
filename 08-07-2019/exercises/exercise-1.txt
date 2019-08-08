@@ -1,0 +1,2 @@
+- Create a GET and POST url using express
+- Test your new API by using Postman

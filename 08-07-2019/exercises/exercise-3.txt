@@ -1,0 +1,10 @@
+For POST /user route, POST /group route, do:
+console.log the POST body data.
+
+For GET /group/:id, GET /user/:id, PUT /user/:id 
+and DELETE /group/:id:
+do console.log the id in the requested url.
+
+Test your code by running postman on all the urls and 
+seeing what prints out in your terminal.
+
