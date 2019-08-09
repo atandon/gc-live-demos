@@ -1,0 +1,10 @@
+Create a server with middleware that authenticates a request. 
+The client (Postman) should send a POST request with an email and password 
+in the body. 
+
+The server will receive the request and check if the client (Postman) 
+is authorized to make the request. If the client is not authorized, return a 
+status code of 401 to Postman. If the client is authorized, return a status 
+code of 200.
+
+

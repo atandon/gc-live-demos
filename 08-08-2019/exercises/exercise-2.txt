@@ -1,0 +1,2 @@
+Create a server that renders an image when a user goes to: 
+GET /photo

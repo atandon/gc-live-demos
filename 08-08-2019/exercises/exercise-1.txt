@@ -1,0 +1,14 @@
+Create 3 files, 1 file to run your server, and 2 files for 
+your routes.
+
+In your 1st routes file, create 3 url paths,
+GET /user
+POST /user
+PUT /user
+
+In your 2nd routes file, create 3 url paths
+GET /group
+POST /group
+PUT /group
+
+Test that all your API endpoints work by using postman.
