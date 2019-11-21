@@ -1,0 +1,61 @@
+-- Returns all the rows from the Users table: 
+-- SELECT * FROM Users;
+
+-- Returns all the rows from the Users table where User age is greater than 40
+-- SELECT * FROM Users WHERE age > 40;
+
+-- Returns all the rows from the Users table where User age is greater than 40 in descending order
+-- SELECT * FROM Users WHERE age > 40 ORDER BY DESC;
+
+-- Returns all the rows from the Users table where User age is greater than 40, but return only 1 result. Remember LIMIT
+-- can only be used at the end of a query
+-- SELECT * FROM Users WHERE age > 40 LIMIT 1;
+
+-- Updates all rows in the Users table to firstname='jim' where id equals 2
+-- UPDATE Users SET firstname='Jim' WHERE id=2;
+
+-- Adds a new row in the Users table
+-- INSERT INTO Users(firstname, lastname, age) VALUES('Scottie', 'Pippen', 55);
+
+-- Deleted all rows in Users table where id=2
+-- DELETE FROM Users WHERE id=2;
+
+-- Creates table cities with columns id, name, and population
+-- CREATE TABLE cities (
+-- 	id SERIAL PRIMARY KEY UNIQUE,
+-- 	name VARCHAR,
+-- 	population SMALLINT
+-- );
+
+-- Creates table Groups with columns id, name, and city_id
+-- CREATE TABLE Groups (
+-- 	id SERIAL PRIMARY KEY UNIQUE,
+-- 	name VARCHAR,
+-- 	city_id INT
+-- );
+
+-- Inserts 3 new rows in table Groups
+-- INSERT INTO Groups(name, city_id) VALUES('GrandCircus', 1), ('Lakers', 2), ('Bulls', 3);
+
+-- Inserts 3 new rows in table cities
+-- INSERT INTO cities(name, population) VALUES('Detroit', 100), ('Los Angeles', 101), ('Chicago', 102);
+
+-- Escaping a single quote by doing ''
+-- INSERT INTO cities(name, population) VALUES('D''1', 105);
+
+-- Adds a new row in Groups with name 'Vegas' but not city_id
+-- INSERT INTO Groups(name) VALUES('Vegas');
+
+-- Returns all rows where groups city_id matches cities.id. Same as 'JOIN'
+-- SELECT Groups.name as GroupName, cities.name as CityName FROM Groups INNER JOIN cities WHERE cities.id = Groups.city_id;
+
+-- Returns all rows where groups city_id matches cities.id, but also Groups rows where Groups city_id does not match to cities.id
+-- SELECT Groups.name as GroupName, cities.name as CityName FROM Groups LEFT JOIN cities WHERE cities.id = Groups.city_id;
+
+-- Returns all rows where groups city_id matches cities.id but also cities rows where cities id does not match to Groups.id
+-- SELECT Groups.name as GroupName, cities.name as CityName FROM Groups RIGHT JOIN cities WHERE cities.id = Groups.city_id;
+
+-- Returns a cross of both tables. So if Groups has 4 rows and cities has 5 rows, then the result will be 4x5 = 20 rows
+-- SELECT Groups.name as GroupName, cities.name as CityName FROM Groups CROSS JOIN cities;
+
+-- Visuals: https://imgur.com/gallery/v23nUwQ/comment/570732797/1
